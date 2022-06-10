@@ -1,0 +1,21 @@
+// Meeting place for all the components and services required for the project : 
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
+import { UserComponent } from './components/user/user.component';
+
+@NgModule({
+  //We need to add all the outside components in the "declarations" : 
+  declarations: [ 
+    AppComponent,
+    UserComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
